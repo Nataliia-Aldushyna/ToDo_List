@@ -1,0 +1,52 @@
+body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div.container {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      div.header {
+        font-size: 30px;
+        margin: 40px 0px 20px 0px;
+      }
+
+      div.item {
+        font-size: 14px;
+        margin: 8px 0px;
+        padding: 8px 0px;
+      }
+
+      div.item .title {
+        display: inline-block;
+        width: 70%;
+      }
+
+      div.item .buttons {
+        display: inline-block;
+        width: 29%;
+        text-align: right;
+      }
+
+      /* .buttons {
+        margin-right: 5px;
+      } */
+
+      div.item:nth-child(even) {
+        background-color: lightgray;
+      }
+
+      div.item:nth-child(odd) {
+        background-color: lightblue;
+      }
+
+      div.item.done {
+        text-decoration: line-through;
+        color: gray;
+      }
+
+      div.item.done input[value="erledigt"],
+      div.item.done input[value="bearbeiten"] {
+        display: none;
+      }
