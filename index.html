@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- aldushyna_todo_liste_html-css-js -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Liste</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">ToDo-Liste</div>
+      <div id="list"></div>
+      <input type="button" value="Neuer Eintrag" onclick="addItem()" />
+    </div>
+
+    <script type="text/javascript">
+      loadList();
+      renderList();
+    </script>
+  </body>
+</html>
