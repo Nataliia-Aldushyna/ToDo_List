@@ -108,7 +108,11 @@ function storeList() {
 function loadList() {
     try {
         toDoList = JSON.parse(localStorage.getItem("toDoList"));
+        if (!Array.isArray(toDoList)) {
+            toDoList = [];
+        }
     } catch (e) {
         console.error(e);
+        toDoList = [];
     }
 }
